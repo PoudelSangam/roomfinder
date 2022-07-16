@@ -1,6 +1,6 @@
 <?php
 include("db.php");
-session_start();got
+session_start();
 $r_email=$_POST["r_email"];
 $r_password=$_POST["r_password"];
 

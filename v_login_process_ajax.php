@@ -16,6 +16,7 @@
 				success :function(dataa){
 					if(dataa=='1')
 					{
+						<?php  echo $data ?>
 						window.location="#"
 					}
 					else
