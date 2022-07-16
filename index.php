@@ -186,27 +186,18 @@ include("db.php");
       <br />
 
 
-      <div class="container-fluid">
-        <div class="row" style="margin-left: 10px">
-          <div class="card" style="width: 16rem" style="border: solid red">
-            <img
-              class="card-img-top img-fluid rounded"
-              src="<?php $sql="select img1 from images where id='$id'";
-              $resul=mysqli_query($conn,$sql);
-              while($data=mysqli_fetch_assoc($resul))
-              {
-                echo $data["img1"];
-
-              } ?>"
-            />
+     
+            
             <div class="card-body">
-              <h3 class="card-title">Room:<?php echo $Data["title"];?></h3>
+              <h3 class="card-title"><?php echo $Data["title"];?></h3>
               <p class="card-text">
                 Room:<?php echo $Data["no_room"];?>  <br />
                 Address: <?php echo $Data["location"];?> <br />
-                Pricing: <?php echo $Data["price"];?>
+                Pricing: <?php echo $Data["price"];?><br>
+                facility:<?php echo $Data["facility"];?>
               </p>
             </div>
+            <hr>
           </div>
         </div>
       </div>

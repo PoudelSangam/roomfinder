@@ -1,14 +1,14 @@
 <?php
 include ("db.php");
-include("v_session.php");
+//include("v_session.php");
 include("rent_upload.php");
 ?>
 <html>
     <head><title>upload</title></head>
     <body>
-<form action="#" id="form" enctype="multipart/form-data">
+<form action="#" method="POST" id="form" enctype="multipart/form-data">
     <label>Address:</label>
-    <input type="text" name="address"><br><br>
+    <input type="text" name="location"><br><br>
     <label>Title:</label>
     <input type="text" name="title"><br><br>
     <label>facility:</label>
@@ -22,7 +22,7 @@ include("rent_upload.php");
     </textarea><br><br>
     <label>Photo:</label>
     <input type="file" name="img1" ><br><br>
-    <input type="submit" name="submit" value="submit">
+    <input type="submit" name="login" value="submit">
     
 </form>
 </body>
