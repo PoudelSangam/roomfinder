@@ -46,7 +46,7 @@ $img1_temp=$_FILES["img1"]["tmp_name"];
     values('$foldeer','$foldeer','$foldeer','$id','asangampoudel@gmail.com')";
     mysqli_query($conn,$sql);
 
-    move_uploaded_file($foldeer,$img1_temp);
+    move_uploaded_file($img1_temp,$foldeer);
    
 // }
 }
