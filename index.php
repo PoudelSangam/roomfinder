@@ -26,10 +26,10 @@ include ("db.php");
                                 <a class="nav-link active" aria-current="page" href="index.php?Search='1'">Home</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
+                                <a class="nav-link" href="viewer_signup.php">sign up</a>
                               </li>
                               <li class="nav-item">
-                                <a class="nav-link disabled">Disabled</a>
+                                <a class="nav-link " href="login.php">login</a>
                               </li>
                             </ul>
                             <form class="d-flex" method="GET" action="#">

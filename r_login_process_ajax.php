@@ -16,7 +16,7 @@
 				success :function(dataa){
 					if(dataa=='1')
 					{
-						window.location="#"
+						window.location="upload.php";
 					}
 					else
 					{

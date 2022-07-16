@@ -26,6 +26,9 @@ if(in_array($extension1,$extension && in_array($extension2,$extension) && in_arr
     $sql="insert into image(img1,img2,img3,id,r_email)
     value('$foldeer','$foldeer1','$foldeer2','$id','$r_email')";
     mysqli_query($conn,$sql);
+    move_uploaded_file($img1_temp,$foldeer);
+    move_uploaded_file($img2_temp,$foldeer1);
+    move_uploaded_file($img3_temp,$foldeer2);
 
 }
 
