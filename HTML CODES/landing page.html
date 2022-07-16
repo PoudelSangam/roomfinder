@@ -1,8 +1,3 @@
-<?php
-include("db.php");
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -80,7 +75,7 @@ include("db.php");
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="login_.php"
+                  href="login interface.html"
                   >SignIn</a
                 >
               </li>
@@ -89,7 +84,7 @@ include("db.php");
                 <a
                   class="nav-link active"
                   aria-current="page"
-                  href="signup.php"
+                  href="sign-up.html"
                   >SignUp</a
                 >
               </li>
@@ -108,16 +103,6 @@ include("db.php");
     </header>
 
     <main>
-    <?php 
-      $sql="select * from product";
-      $result=mysqli_query($conn,$sql);
-      if(mysqli_num_rows($result)>0)
-      {
-        while($Data=mysqli_fetch_assoc($result))
-        {
-
-          $id=$Data["product_id"];
-          ?>
       <div
         id="carouselExampleInterval"
         class="carousel slide"
@@ -126,39 +111,21 @@ include("db.php");
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="1500">
             <img
-              src="<?php $sql="select img1 from images where id='$id+2 '";
-              $resul=mysqli_query($conn,$sql);
-              while($data=mysqli_fetch_assoc($resul))
-              {
-                echo $data["img1"];
-
-              } ?>"
+              src="pexels-binyamin-mellish-106399.jpg"
               class="d-block w-100"
               alt="..."
             />
           </div>
           <div class="carousel-item" data-bs-interval="1500">
             <img
-              src="<?php $sql="select img1 from images where id='$id+3'";
-              $resul=mysqli_query($conn,$sql);
-              while($data=mysqli_fetch_assoc($resul))
-              {
-                echo $data["img1"];
-
-              } ?>"
+              src="pexels-pixabay-221540.jpg"
               class="d-block w-100"
               alt="..."
             />
           </div>
           <div class="carousel-item" data-bs-interval="1500">
             <img
-              src="<?php $sql="select img1 from images where id='$id+4'";
-              $resul=mysqli_query($conn,$sql);
-              while($data=mysqli_fetch_assoc($resul))
-              {
-                echo $data["img1"];
-
-              } ?>"
+              src="pexels-pixabay-259962.jpg"
               class="d-block w-100"
               alt="..."
             />
@@ -185,39 +152,25 @@ include("db.php");
       </div>
       <br />
 
-
       <div class="container-fluid">
         <div class="row" style="margin-left: 10px">
           <div class="card" style="width: 16rem" style="border: solid red">
             <img
               class="card-img-top img-fluid rounded"
-              src="<?php $sql="select img1 from images where id='$id'";
-              $resul=mysqli_query($conn,$sql);
-              while($data=mysqli_fetch_assoc($resul))
-              {
-                echo $data["img1"];
-
-              } ?>"
+              src="../images/download.jpg"
             />
             <div class="card-body">
-              <h3 class="card-title">Room:<?php echo $Data["title"];?></h3>
+              <h3 class="card-title">Owner's name</h3>
               <p class="card-text">
-                Room:<?php echo $Data["no_room"];?>  <br />
-                Address: <?php echo $Data["location"];?> <br />
-                Pricing: <?php echo $Data["price"];?>
+                Name: {} <br />
+                Address: {} <br />
+                Pricing: {}
               </p>
             </div>
           </div>
         </div>
       </div>
     </main>
-
-<?php
-  }
-
-
-}
-?>
 
     <footer style="background-color: #e3f2fd">
       <h5>Our contacts:</h5>

@@ -31,8 +31,8 @@ while($Data=mysqli_fetch_assoc($result))
 </div>
 </div>
 <div class="col-md-4 marginc" style="margin-top:30px;">
-    <h1>Address:<?php echo $Data["address"]?> </h1><br>
-    <h3>Price:<?php echo $Data["rent"]?></h3><br>
+    <h1>Address:<?php echo $Data["location"]?> </h1><br>
+    <h3>Price:<?php echo $Data["price"]?></h3><br>
     <h3>Room:<?php echo $Data["roomnumber"]?></h3><br>
     <p><?php echo $Data["details"]?></p>
 

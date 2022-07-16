@@ -1,0 +1,27 @@
+body {
+  background-color: #93dceb;
+  font-family: monospace;
+  font-size: 18px;
+}
+
+form {
+  background-color: #a1c7ff;
+  width: 400px;
+  height: 400px;
+  padding-top: 50px;
+  border-radius: 25px;
+}
+
+.form-floating {
+  margin-top: 30px;
+}
+
+button {
+  margin-top: 25px;
+  height: 100px
+  width: 125px;
+}
+
+.form-content {
+  margin-top: 25px;
+}
